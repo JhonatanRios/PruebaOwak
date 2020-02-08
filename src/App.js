@@ -92,7 +92,7 @@ export class App extends React.Component {
   render() {
     return(
       <div className="containerBody">
-        <nav className="containerHeader " role="navigation">
+        <nav className="containerHeader" role="navigation">
           <div className="nav-wrapper container containerBot">
             <ul className="right hide-on-med-and-down contNav">
               <div className='contBotones'>
