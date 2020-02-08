@@ -8,8 +8,6 @@ import './scss/style.css';
 import categories from './js/categories.json';
 import products from './js/products.json'
 
-//import './js/materialize.js';
-//import './js/init.js';
 const lupa = '/assets/buscar.png';
 const casa = '/assets/mi-venta-de-garage.png';
 const fondo = '/assets/hero_background.png';
@@ -186,6 +184,9 @@ export class App extends React.Component {
             <h4 className="text derechos">Copyright © 2018</h4>
           </div>
           <div className="contIzq">
+            <img src={red1} className="redes"/>
+            <img src={red2} className="redes"/>
+            <img src={red3} className="redes"/>
           </div>
         </div>
       </div>
