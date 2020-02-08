@@ -22,6 +22,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #eceff1;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -290,11 +292,14 @@
 .containerCabezera .imgFondo {
   width: 100%;
   height: 100%;
+  display: block;
+  margin: auto;
 }
 
 .containerCategorias {
   width: 100%;
   height: 800px;
+  margin: 8% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,6 +320,8 @@
 }
 
 .containerCategorias .containerTitulo {
+  width: 100%;
+  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,20 +339,14 @@
 
 .containerCategorias .containerTitulo .titulo {
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 30px;
+  font-weight: 800;
   color: #263238;
 }
 
-.containerCategorias .container .section .row .categoria {
-  width: 30%;
-  height: 300px;
-  -webkit-border-radius: 10px;
-  -webkit-border-top-right-radius: 0;
-  -moz-border-radius: 10px;
-  -moz-border-radius-topright: 0;
-  border-radius: 10px;
-  border-top-right-radius: 0;
+.containerCategorias .container {
+  width: 100%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,8 +354,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -363,12 +362,59 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fff;
 }
 
-.containerProductos {
+.containerCategorias .container .section {
   width: 100%;
-  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerCategorias .container .section .row {
+  width: 100%;
+  margin: 0;
+  padding: 0 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerCategorias .container .section .row .categoria {
+  width: 40%;
+  height: 300px;
+  -webkit-border-radius: 15px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius: 15px;
+  -moz-border-radius-topright: 0;
+  border-radius: 15px;
+  border-top-right-radius: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +432,443 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #d9d9d9;
+  margin: 2%;
+  background: #fff;
+}
+
+.containerCategorias .container .section .row .categoria .imgCateg {
+  width: 100%;
+  height: 80%;
+  display: block;
+  margin: auto;
+  -webkit-border-radius: 15px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius: 15px;
+  -moz-border-radius-topright: 0;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+}
+
+.containerCategorias .container .section .row .categoria .tituCateg {
+  width: 100%;
+  height: 20%;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #263238;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding-left: 15%;
+}
+
+.containerProductos {
+  width: 100%;
+  height: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #d9d9d9;
+}
+
+.containerProductos .containerTitulo {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .containerTitulo .titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #263238;
+}
+
+.containerProductos .container {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .container .section {
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .container .section .row {
+  width: 100%;
+  margin: 0;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .container .section .row .producto {
+  width: 29%;
+  height: 400px;
+  -webkit-border-radius: 15px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius: 15px;
+  -moz-border-radius-topright: 0;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+  background: #fff;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct {
+  width: 100%;
+  height: 75%;
+  position: relative;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .contCategProduct1 {
+  width: 40%;
+  height: 30px;
+  margin: 4%;
+  position: absolute;
+  z-index: 2;
+  background: #499aea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .contCategProduct1 .tituCategProduct {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .contCategProduct2 {
+  width: 40%;
+  height: 30px;
+  margin: 4%;
+  position: absolute;
+  z-index: 2;
+  background: #eab749;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .contCategProduct2 .tituCategProduct {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .contCategProduct3 {
+  width: 40%;
+  height: 30px;
+  margin: 4%;
+  position: absolute;
+  z-index: 2;
+  background: #f23604;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .contCategProduct3 .tituCategProduct {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .contCategProduct4 {
+  width: 40%;
+  height: 30px;
+  margin: 4%;
+  position: absolute;
+  z-index: 2;
+  background: #7e49ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .contCategProduct4 .tituCategProduct {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .container .section .row .producto .contImgProduct .imgProduct {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 15px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius: 15px;
+  -moz-border-radius-topright: 0;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  display: block;
+  margin: auto;
+}
+
+.containerProductos .container .section .row .producto .contText {
+  width: 100%;
+  height: 25%;
+  padding-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.containerProductos .container .section .row .producto .contText .tituProduct {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #61727c;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerProductos .container .section .row .producto .contText .tituPrice {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #499aea;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerFooter {
+  width: 100%;
+  height: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #499aea;
 }
 
 .containerBody::-webkit-scrollbar {
