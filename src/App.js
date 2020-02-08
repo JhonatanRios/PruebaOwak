@@ -23,6 +23,9 @@ const productDos = '/assets/products/tv.jpg';
 const productTres = '/assets/products/sofa.jpg';
 const productCua = '/assets/products/playstation.jpg';
 const productCin = '/assets/products/got.jpg';
+const red1 = '/assets/redes/instagram.png';
+const red2 = '/assets/redes/facebook.png';
+const red3 = '/assets/redes/twitter.png';
 
 const formatterPeso = new Intl.NumberFormat('es-CO', {
   style: 'currency',
@@ -83,7 +86,6 @@ export class App extends React.Component {
   }
 
   render() {
-    console.log(products.products)
     return(
       <div className="containerBody">
         <nav className="containerHeader " role="navigation">
@@ -150,18 +152,13 @@ export class App extends React.Component {
 
         <div className="containerProductos">
           <div className="containerTitulo">
-            <h1 className="titulo">Categorías</h1>
+            <h1 className="titulo">Productos</h1>
           </div>
           <div className="container">
             <div className="section">
               <div className="row" id="row">
                 {
                   products.products.map((product, index) => {
-                    console.log(product.image)
-                    console.log(new Intl.NumberFormat('es-CO', {
-                      style: 'currency',
-                      currency: 'COP',
-                      minimumFractionDigits: 0}).format(product.price))
                     return(
                       <div className="producto">
                         <div className='contImgProduct'>
@@ -183,8 +180,13 @@ export class App extends React.Component {
           </div>
         </div>
 
-        <div className='containerFooter'>
-
+        <div className="containerFooter">
+          <div className="contDer">
+            <h4 className="text empresa">Owak</h4>
+            <h4 className="text derechos">Copyright © 2018</h4>
+          </div>
+          <div className="contIzq">
+          </div>
         </div>
       </div>
     );
