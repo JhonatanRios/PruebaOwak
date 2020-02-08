@@ -22,13 +22,13 @@ $primary: #B1122A;
     font-size: inherit;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: $lightGray;
-    overflow-y: scroll;
+
+.containerBody {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 .containerHeader {
@@ -263,21 +263,22 @@ body {
     background-color: $gray;
 }
 
-body::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+.containerBody::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    //@at-root: none;  /* Ocultar scroll */
 }
 
-body::-webkit-scrollbar-thumb {
+.containerBody::-webkit-scrollbar-thumb {
     background: $lightGray;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
-body::-webkit-scrollbar-thumb:hover {
+.containerBody::-webkit-scrollbar-thumb:hover {
     background: rgba($color: $blue, $alpha: 0.5);
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-body::-webkit-scrollbar-thumb:active {
+.containerBody::-webkit-scrollbar-thumb:active {
     background-color: $blue;
 }
