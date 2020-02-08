@@ -1,9 +1,10 @@
 import React from 'react';
-import ResponsiveMenu from 'react-responsive-navbar';
-import logo from './logo.svg';
+import M from 'materialize-css';
+//import M from './js/materialize.js';
+
+import './scss/style.css';
 import './scss/reset.css';
 import './scss/materialize.css';
-import './scss/style.css';
 
 import categories from './js/categories.json';
 import products from './js/products.json'
@@ -32,6 +33,11 @@ const formatterPeso = new Intl.NumberFormat('es-CO', {
 })
 
 export class App extends React.Component {
+
+  componentDidMount(){
+    var elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+  }
 
   renderImgCateg(catego) {
     if (catego === 1) {
@@ -88,12 +94,14 @@ export class App extends React.Component {
       <div className="containerBody">
         <nav className="containerHeader " role="navigation">
           <div className="nav-wrapper container containerBot">
-            <ul className="right hide-on-med-and-down">
-              <li><a className="botton" href="">NOSOTROS</a></li>
-              <li><a className="botton" href="">PRODUCTOS</a></li>
-              <li><a className="botton" href="">CONTACTO</a></li>
+            <ul className="right hide-on-med-and-down contNav">
+              <div className='contBotones'>
+                <li><a className="botton" href="">NOSOTROS</a></li>
+                <li><a className="botton" href="">PRODUCTOS</a></li>
+                <li><a className="botton" href="">CONTACTO</a></li>
+              </div>
+              <img src={lupa} class="botonBuscar"/>
             </ul>
-            <img src={lupa} class="botonBuscar"/>
         
             <ul id="nav-mobile" className="sidenav">
               <li><a className="bottonNav" href="">NOSOTROS</a></li>
