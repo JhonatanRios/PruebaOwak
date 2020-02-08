@@ -13,13 +13,6 @@ $categProduct2: #eab749;
 $categProduct3: #f23604;
 $categProduct4: #7e49ea;
 
-$secundary: #F5F4D8;
-$primary: #B1122A;
-
-* {
-    box-sizing: border-box;
-}
-
 .icon-block {
     padding: 0 15px;
 }
@@ -37,13 +30,14 @@ $primary: #B1122A;
 }
 
 .containerBody {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
     display: flex;
     flex-direction: column;
     background-color: $lightGray;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
 
@@ -610,25 +604,7 @@ $primary: #B1122A;
     }
 }
 
-.containerBody::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    //@at-root: none;  /* Ocultar scroll */
-}
 
-.containerBody::-webkit-scrollbar-thumb {
-    background: $lightGray;
-    border-radius: 4px;
-}
-
-.containerBody::-webkit-scrollbar-thumb:hover {
-    background: rgba($color: $blue, $alpha: 0.5);
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.containerBody::-webkit-scrollbar-thumb:active {
-    background-color: $blue;
-}
 
 @media only screen and (min-width: 600px) and (max-width: 1199px)  {
     .containerCabezera {
@@ -1054,13 +1030,13 @@ $primary: #B1122A;
     }
 
     .containerBody::-webkit-scrollbar {
-        width: 4px;
-        height: 4px;
+        width: 0px;
+        height: 0px;
     }
     
     .containerBody::-webkit-scrollbar-thumb {
         background: $lightGray;
-        border-radius: 4px;
+        border-radius: 0px;
     }
     
     .containerBody::-webkit-scrollbar-thumb:hover {
