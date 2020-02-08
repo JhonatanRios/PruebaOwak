@@ -991,37 +991,21 @@
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
   .containerCabezera {
-    width: 100%;
-    height: 600px;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 800px;
   }
   .containerCabezera .containerInfoCab {
     width: 100%;
-    height: 500px;
+    height: 800px;
     padding-left: 4%;
     padding-right: 4%;
     position: absolute;
-    -webkit-box-orient: horizontal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: center;
@@ -1034,125 +1018,47 @@
             align-items: center;
   }
   .containerCabezera .containerInfoCab .ladoDer {
-    width: 45%;
-    height: 500px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-line-pack: center;
         align-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    float: left;
-    padding-left: 8%;
-    padding-top: 4%;
+    padding: 0;
   }
   .containerCabezera .containerInfoCab .ladoDer .titulo {
-    font-family: "Poppins", sans-serif;
-    font-size: 75px;
+    margin: 0;
+    font-size: 70px;
     font-weight: 900;
-    color: #fff;
+    text-align: center;
   }
   .containerCabezera .containerInfoCab .ladoDer .parrafo {
-    font-family: "Poppins", sans-serif;
-    width: 100%;
-    font-size: 14px;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    color: #fff;
-    line-height: 30px;
+    width: 90%;
+    margin: 0;
+    text-align: center;
   }
   .containerCabezera .containerInfoCab .ladoDer .containerBotConoce {
-    width: 100%;
-    height: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce {
-    width: 35%;
-    height: 40px;
-    -webkit-border-radius: 10px;
-    -webkit-border-top-right-radius: 0;
-    -moz-border-radius: 10px;
-    -moz-border-radius-topright: 0;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #fff;
   }
   .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce .textBot {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    margin-left: 8px;
-    color: #263238;
-  }
-  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce .arrow {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce:hover {
-    background: #499aea;
-  }
-  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce:hover .textBot {
-    color: #fff;
-    font-weight: 900;
-  }
-  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce:hover .arrow {
-    margin-left: 20px;
+    font-weight: 700;
   }
   .containerCabezera .containerInfoCab .ladoIzq {
-    width: 55%;
-    height: 500px;
-    float: right;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 2%;
-  }
-  .containerCabezera .containerInfoCab .ladoIzq .imgCasa {
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto;
+    width: 70%;
+    height: 40%;
+    padding: 0;
   }
   .containerCabezera .imgFondo {
     width: 100%;

@@ -632,114 +632,52 @@ $primary: #B1122A;
 
 @media only screen and (min-width: 600px) and (max-width: 1199px)  {
     .containerCabezera {
-        width: 100%;
-        height: 600px;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        height: 800px;
         .containerInfoCab {
             width: 100%;
-            height: 500px;
+            height: 800px;
             padding-left: 4%;
             padding-right: 4%;
             position: absolute;
-            flex-direction: row;
+            display: flex;
+            flex-direction: column;
             flex-wrap: nowrap;
             justify-content: center;
             align-content: center;
             align-items: center;
             .ladoDer {
-                width: 45%;
-                height: 500px;
-                justify-content: center;
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 align-content: center;
                 align-items: center;
-                float: left;
-                padding-left: 8%;
-                padding-top: 4%;
+                padding: 0;
                 .titulo {
-                    font-family: $font, sans-serif;
-                    font-size: 75px;
+                    margin: 0;
+                    font-size: 70px;
                     font-weight: 900;
-                    color: $white;
+                    text-align: center;
                 }
                 .parrafo {
-                    font-family: $font, sans-serif;
-                    width: 100%;
-                    font-size: 14px;
-                    margin-top: 6%;
-                    margin-bottom: 6%;
-                    color: $white;
-                    line-height: 30px;
+                    width: 90%;
+                    margin: 0;
+                    text-align: center;
                 }
                 .containerBotConoce {
-                    width: 100%;
-                    height: 60px;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: flex-start;
-                    align-content: center;
-                    align-items: center;
+                    justify-content: center;
                     .botConoce {
-                        width: 35%;
-                        height: 40px;
-                        -webkit-border-radius: 10px;
-                        -webkit-border-top-right-radius: 0;
-                        -moz-border-radius: 10px;
-                        -moz-border-radius-topright: 0;
-                        border-radius: 10px;
-                        border-top-right-radius: 0;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        justify-content: center;
-                        align-content: center;
-                        align-items: center;
-                        background: $white;
                         .textBot {
-                            font-family: $font, sans-serif;
-                            font-weight: 600;
-                            margin-left: 8px;
-                            color: $black;
-                        }
-                        .arrow {
-                            width: 20px;
-                            height: 20px;
-                            margin-left: 10px;
-                            margin-right: 10px;
-                        }
-                    }
-                    .botConoce:hover {
-                        background: $blue;
-                        .textBot {
-                            color: $white;
-                            font-weight: 900;
-                        }
-                        .arrow {
-                            margin-left: 20px;
+                            font-weight: 700;
                         }
                     }
                 }
             }
             .ladoIzq {
-                width: 55%;
-                height: 500px;
-                float: right;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-                padding-bottom: 2%;
-                .imgCasa {
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-                    margin: auto;
-                }
+                width: 70%;
+                height: 40%;
+                padding: 0;
             }
         }
         .imgFondo {
