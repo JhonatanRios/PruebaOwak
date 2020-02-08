@@ -316,6 +316,8 @@
   height: 100%;
   display: block;
   margin: auto;
+  background-image: url("/assets/hero_background.png");
+  background-size: cover;
 }
 
 .containerCategorias {
@@ -987,10 +989,7 @@
   background-color: #499aea;
 }
 
-@media only screen and (max-width: 599px) {
-  .containerBody {
-    overflow-y: scroll;
-  }
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
   .containerCabezera {
     width: 100%;
     height: 600px;
@@ -1160,35 +1159,151 @@
     height: 100%;
     display: block;
     margin: auto;
+    background-image: url("/assets/hero_background.png");
+    background-size: cover;
   }
   .containerCategorias {
-    width: 100%;
-    height: 1200px;
-    margin: 0 0 8% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 800px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .containerCategorias .containerTitulo {
-    width: 100%;
     height: 10%;
+  }
+  .containerCategorias .containerTitulo .titulo {
+    font-weight: 700;
+  }
+  .containerCategorias .container .section .row {
+    padding: 0 8%;
+  }
+  .containerCategorias .container .section .row .categoria {
+    width: 45%;
+    height: 250px;
+  }
+  .containerProductos {
+    height: 850px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .containerProductos .containerTitulo {
+    height: 10%;
+  }
+  .containerProductos .containerTitulo .titulo {
+    margin: 0;
+    font-size: 30px;
+  }
+  .containerProductos .container {
+    height: 80%;
+  }
+  .containerProductos .container .section .row .producto {
+    width: 31%;
+    height: 300px;
+    margin: 1%;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .contCategProduct1 {
+    width: 60%;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .contCategProduct1 .tituCategProduct {
+    font-weight: 700;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .contCategProduct2 {
+    width: 60%;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .contCategProduct2 .tituCategProduct {
+    font-weight: 700;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .contCategProduct3 {
+    width: 60%;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .contCategProduct3 .tituCategProduct {
+    font-weight: 700;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .contCategProduct4 {
+    width: 60%;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .contCategProduct4 .tituCategProduct {
+    font-weight: 700;
+  }
+  .containerProductos .container .section .row .producto .contImgProduct .imgProduct {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 15px;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius: 15px;
+    -moz-border-radius-topright: 0;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    display: block;
+    size: cover;
+    margin: auto;
+  }
+  .containerProductos .container .section .row .producto .contText {
+    padding-left: 10%;
+  }
+  .containerProductos .container .section .row .producto .contText .tituProduct {
+    font-size: 20px;
+  }
+  .containerProductos .container .section .row .producto .contText .tituPrice {
+    font-size: 16px;
+  }
+  .containerFooter .contDer .text {
+    padding-left: 8%;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .containerCabezera {
+    height: 800px;
+  }
+  .containerCabezera .containerInfoCab {
+    width: 100%;
+    height: 700px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containerCabezera .containerInfoCab .ladoDer {
+    width: 100%;
+    height: 60%;
+    padding: 0;
+  }
+  .containerCabezera .containerInfoCab .ladoDer .titulo {
+    font-size: 55px;
+    font-weight: 900;
+    text-align: center;
+  }
+  .containerCabezera .containerInfoCab .ladoDer .parrafo {
+    font-size: 14px;
+    text-align: center;
+  }
+  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce {
+    width: 50%;
+    height: 40px;
+    -webkit-border-radius: 10px;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius: 10px;
+    -moz-border-radius-topright: 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: center;
@@ -1199,72 +1314,54 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: #fff;
   }
-  .containerCategorias .containerTitulo .titulo {
+  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce .textBot {
     font-family: "Poppins", sans-serif;
-    font-size: 30px;
-    font-weight: 800;
+    font-weight: 600;
+    margin-left: 8px;
     color: #263238;
   }
-  .containerCategorias .container {
-    width: 100%;
-    height: 90%;
-    margin: 2% 0 2% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce .arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .containerCategorias .container .section {
+  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce:hover {
+    background: #499aea;
+  }
+  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce:hover .textBot {
+    color: #fff;
+    font-weight: 900;
+  }
+  .containerCabezera .containerInfoCab .ladoDer .containerBotConoce .botConoce:hover .arrow {
+    margin-left: 20px;
+  }
+  .containerCabezera .containerInfoCab .ladoIzq {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 40%;
+    padding: 0;
+  }
+  .containerCabezera .containerInfoCab .ladoIzq .imgCasa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
+  .containerCategorias {
+    height: 1200px;
+  }
+  .containerCategorias .containerTitulo .titulo {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .containerCategorias .container {
+    height: 90%;
   }
   .containerCategorias .container .section .row {
-    width: 100%;
     margin: 0;
     padding: 0 1%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .containerCategorias .container .section .row .categoria {
     width: 80%;
@@ -1275,33 +1372,9 @@
     -moz-border-radius-topright: 0;
     border-radius: 20px;
     border-top-right-radius: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin: 2%;
-    background: #fff;
-    -webkit-box-shadow: 0px 14px 82px -44px rgba(0, 0, 0, 0.55);
-    box-shadow: 0px 14px 82px -44px rgba(0, 0, 0, 0.55);
   }
   .containerCategorias .container .section .row .categoria .imgCateg {
-    width: 100%;
-    height: 80%;
-    display: block;
-    margin: auto;
     -webkit-border-radius: 20px;
     -webkit-border-top-right-radius: 0;
     -moz-border-radius: 20px;
@@ -1310,7 +1383,6 @@
     border-top-right-radius: 0;
   }
   .containerCategorias .container .section .row .categoria .tituCateg {
-    width: 100%;
     font-size: 18px;
     font-weight: 700;
     display: -webkit-box;
@@ -1331,27 +1403,11 @@
     height: 800px;
   }
   .containerProductos .containerTitulo {
-    width: 100%;
     height: 10%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .containerProductos .containerTitulo .titulo {
-    font-family: "Poppins", sans-serif;
     font-size: 25px;
-    font-weight: 800;
-    color: #263238;
+    font-weight: 700;
   }
   .containerProductos .container {
     width: 100%;

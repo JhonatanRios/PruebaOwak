@@ -131,7 +131,7 @@ export class App extends React.Component {
               <img src={casa} className="imgCasa"/>
             </div>
           </div>
-          <img src={fondo} className="imgFondo"/>
+          <div className="imgFondo"></div>
         </div>
         
         <div className="containerCategorias">
