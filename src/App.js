@@ -1,6 +1,5 @@
 import React from 'react';
 import M from 'materialize-css';
-//import M from './js/materialize.js';
 
 import './scss/style.css';
 import './scss/reset.css';
@@ -145,7 +144,7 @@ export class App extends React.Component {
                   categories.categories.map((categ, index) => {
                     return(
                       <div className="categoria">
-                        <img src={this.renderImgCateg(categ.id)} className="imgCateg"/>
+                        <div className="imgCateg" style={{'backgroundImage': `url(${this.renderImgCateg(categ.id)})`}}></div>
                         <h3 className='tituCateg'>{categ.name}</h3>
                       </div>
                     );
@@ -171,7 +170,7 @@ export class App extends React.Component {
                           <div className={this.renderColorCategProduc(product.category_id)}>
                             <h2 className='tituCategProduct'>{this.renderTextCategProduc(product.category_id)}</h2>
                           </div>
-                          <img src={this.renderImgProduct(product.id)} className="imgProduct"/>
+                          <div className="imgProduct" style={{'backgroundImage': `url(${this.renderImgProduct(product.id)})`}}></div>
                         </div>
                         <div className='contText'>
                           <h2 className='tituProduct'>{product.name}</h2>

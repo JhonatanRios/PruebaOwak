@@ -462,14 +462,15 @@
 .containerCategorias .container .section .row .categoria .imgCateg {
   width: 100%;
   height: 80%;
-  display: block;
-  margin: auto;
   -webkit-border-radius: 15px;
   -webkit-border-top-right-radius: 0;
   -moz-border-radius: 15px;
   -moz-border-radius-topright: 0;
   border-radius: 15px;
   border-top-right-radius: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .containerCategorias .container .section .row .categoria .tituCateg {
@@ -528,12 +529,13 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .containerProductos .containerTitulo .titulo {
+  margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 800;
@@ -796,7 +798,6 @@
 }
 
 .containerProductos .container .section .row .producto .contImgProduct .imgProduct {
-  width: 100%;
   height: 100%;
   -webkit-border-radius: 15px;
   -webkit-border-top-right-radius: 0;
@@ -804,9 +805,9 @@
   -moz-border-radius-topright: 0;
   border-radius: 15px;
   border-top-right-radius: 0;
-  display: block;
-  size: cover;
-  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .containerProductos .container .section .row .producto .contText {
@@ -899,6 +900,7 @@
 .containerFooter .contDer {
   width: 70%;
   height: 100px;
+  padding: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1106,19 +1108,6 @@
   }
   .containerProductos .container .section .row .producto .contImgProduct .contCategProduct4 .tituCategProduct {
     font-weight: 700;
-  }
-  .containerProductos .container .section .row .producto .contImgProduct .imgProduct {
-    width: 100%;
-    height: 100%;
-    -webkit-border-radius: 15px;
-    -webkit-border-top-right-radius: 0;
-    -moz-border-radius: 15px;
-    -moz-border-radius-topright: 0;
-    border-radius: 15px;
-    border-top-right-radius: 0;
-    display: block;
-    size: cover;
-    margin: auto;
   }
   .containerProductos .container .section .row .producto .contText {
     padding-left: 10%;
